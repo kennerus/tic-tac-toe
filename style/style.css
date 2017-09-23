@@ -1,0 +1,15 @@
+.tttWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.cell {
+    width: 33%;
+    height: 33%;
+    background-color: red;
+    font-size: 5vw;
+    text-align: center;
+}
