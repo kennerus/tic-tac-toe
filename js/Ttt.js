@@ -56,7 +56,20 @@ function Ttt() {
             console.log(event.target);
             console.log(this);
         }
+    }
 
+    this.getElementByAttr = function (attr, value) {
+        var elems = document.getElementsByTagName( '*' );
+        for( var i =0; elems.length; i++ ) {
+            if ( elems[i].getAttribute( attr ) == value ) {
+                return elems[i];
+            }
+        }
+    }
+
+    this.setCellColor = function (position, color) {
+        var cell = this.getElementByAttr('data-position', position);
+        cell.style.backgroundColor = color;
     }
 
 }
